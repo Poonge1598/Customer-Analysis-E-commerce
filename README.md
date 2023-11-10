@@ -1,25 +1,29 @@
-## Customer Subscription Analysis, E-commerce
+# Project Overview: E-commerce Data Analysis
 
-In this project, I conducted a thorough analysis of customer subscription patterns on an e-commerce platform using Google BigQuery and advanced SQL techniques. The goal was to identify instances where customers consecutively subscribed for 3 or more deliveries, shedding light on key insights into their subscription behaviors.
+## 1. Web Data Parsing with BeautifulSoup (deliveroo_parsing.py)
 
-### Approach and Methodology:
+### Description:
+The `deliveroo_parsing.py` script utilizes BeautifulSoup to parse HTML files containing order information from the Deliveroo platform. It extracts crucial details such as order number, customer information, restaurant details, item specifics, and total costs. The parsed data is then structured and stored in a JSON file for further analysis.
 
-- Leveraged Google BigQuery's capabilities to efficiently handle and process large-scale e-commerce datasets.
-  
-- Developed a comprehensive SQL script incorporating window functions to calculate running totals and identify subscription cycles based on specific criteria.
+### Sample Output:
+- The output file, `orders_data_parsed.json`, provides a structured view of orders, including customer details, restaurant information, item specifics, and total costs.
 
-- Utilized a nuanced approach to pinpoint the exact start and end dates of each identified subscription cycle, ensuring precision in the analysis.
+## 2. Customer Subscription Analysis (SQL Script)
 
-### Key Contributions:
+### Description:
+The SQL script analyzes a dataset related to customer orders on a Deliveroo-like platform. It identifies subscription cycles by tracking instances where customers consecutively subscribe for 3 or more deliveries. The analysis includes the start and end dates of each subscription cycle, providing insights into customer behavior and subscription patterns.
 
-- Enhanced the platform's understanding of customer engagement by providing actionable insights into subscription behaviors.
+### Sample Output:
+- The output includes a detailed breakdown of identified subscription cycles, showcasing start and end dates, allowing for a deeper understanding of customer interactions with the subscription model.
 
-- Empowered decision-making processes by offering clear visibility into subscription cycle dynamics and customer preferences.
+## 3. E-commerce Data Analysis (Tableau Story)
 
-### Results:
+### Description:
+The Tableau story explores various parameters within an e-commerce dataset. It performs basic analyses by comparing parameters such as customer demographics, order details, and total costs. The visualizations aim to uncover trends, patterns, and insights that can inform strategic decisions for the e-commerce platform.
 
-The output of the analysis includes a detailed breakdown of identified subscription cycles, showcasing start and end dates, allowing for a deeper understanding of customer interactions with the subscription model.
+### Sample Output:
+- The Tableau story file presents visualizations that highlight relationships between different parameters, providing a comprehensive view of key metrics and trends in the e-commerce data.
 
-### Impact:
+---
 
-This project played a crucial role in informing targeted improvements to the subscription model, contributing to a more tailored and customer-centric approach. The insights derived from this analysis provided a foundation for data-driven decision-making, ultimately optimizing the overall customer experience on the e-commerce platform.
+**Note:** Make sure to customize the paths and filenames as needed when implementing these scripts and analyses.
